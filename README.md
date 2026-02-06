@@ -18,7 +18,7 @@ This project simulates a real-world logistics analytics use case similar to Amaz
 - How do weather and operational factors impact delivery time?
 - What is the estimated financial impact of SLA breaches?
 ## Dataset Details
-[Link Text](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/Delivery_Logistics.csv)
+[Dataset](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/Delivery_Logistics.csv)
 - Fields include:
 - Delivery ID
 - Region
