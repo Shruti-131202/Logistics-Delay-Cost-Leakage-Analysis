@@ -54,7 +54,7 @@ Created measures for:
 - Estimated financial impact of SLA breaches using assumed penalty cost per breach.
 - This helped simulate how delays translate into real revenue impact and operational inefficiency.
 ## Dashboard Structure
-### 
+### [Dashboard](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/delivery_logistic.pbit)
 ## Business Recommendations
 - Reallocate vehicle resources in high-risk regions
 - Introduce weather-based route planning adjustments
