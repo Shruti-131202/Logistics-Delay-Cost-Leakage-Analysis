@@ -43,6 +43,11 @@ This project aims to quantify SLA breach patterns and estimate cost leakage to e
 - Implement early delay detection alerts for shipments exceeding risk threshold
 ## Dashboard Preview
 [Dashboard](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/delivery_logistic.pbit)
+- <img width="893" height="496" alt="image" src="https://github.com/user-attachments/assets/bf84b9a2-af80-4e5f-ae0f-90bb2b465c99" />
+- <img width="893" height="496" alt="image" src="https://github.com/user-attachments/assets/4b0f275f-c459-486b-87bc-68c2a14c94eb" />
+- ![SLA Risk](https://github.com/user-attachments/assets/c193726e-8f48-48be-8230-eebda647b122)
+
+
 The dashboard includes:
 - Executive KPI Summary
 - Region-wise SLA Performance
