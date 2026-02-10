@@ -33,9 +33,8 @@ This project aims to quantify SLA breach patterns and estimate cost leakage to e
 - This indicates operational inefficiencies are concentrated in specific high-risk segments.
 ## Business Impact
 - Based on current breach patterns:
-- Annual Penalty Exposure: ₹ XX lakh
-- Reducing breach rate by 5% could save approx ₹ X lakh annually
-- Reallocating high-risk routes could reduce delay severity by X%
+- Annual Penalty Exposure: 408 k
+- If Company can reduce breach rate by 30% could save approx 122k  annually.
 - This analysis enables proactive SLA risk management and cost optimization.
 ## Recommendations
 - Prioritize operational monitoring in high-breach regions
@@ -43,11 +42,9 @@ This project aims to quantify SLA breach patterns and estimate cost leakage to e
 - Reallocate high-risk routes to more reliable vehicle types
 - Implement early delay detection alerts for shipments exceeding risk threshold
 ## Dashboard Preview
-[Dashboard]()
+[Dashboard](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/delivery_logistic.pbit)
 The dashboard includes:
 - Executive KPI Summary
 - Region-wise SLA Performance
 - Delay Distribution Analysis
 - Cost Leakage Breakdown
-
-Risk Segmentation View
