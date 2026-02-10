@@ -25,12 +25,13 @@ This project aims to quantify SLA breach patterns and estimate cost leakage to e
 - Financial Impact Estimation
 - Interactive Dashboard Development (Power BI)
 ## Key Findings
-- Overall SLA Breach Rate: 23.22%
-- Total Estimated Cost Leakage: 408.2k
-- Region north contributed 22.95% of total breaches
-- Heavy Rain conditions increased breach likelihood by 34%
-- Dhl had  higher penalty cost
-- This indicates operational inefficiencies are concentrated in specific high-risk segments.
+- Overall SLA Breach Rate: 23.22% across 25,000 shipments
+- Deliveries during Foggy weather show 34% breach rate, 1.46x higher than network average
+- Clear weather performs significantly better at 14.37%, indicating strong environmental impact on SLA risk
+- Total Estimated Annual Penalty Exposure: ₹408,200
+- Region North accounts for 22.95% of total breaches, proportional to its shipment share (~20%), indicating no abnormal regional concentration
+- Same-Day delivery shows extremely high SLA breach rate (50%) but represents only 0.8% of total shipments, limiting overall financial impact.
+- SLA risk is more strongly influenced by weather and delivery mode variability than by regional distribution
 ## Business Impact
 - Based on current breach patterns:
 - Annual Penalty Exposure: 408 k
