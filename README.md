@@ -1,70 +1,53 @@
 # Logistics-Delay-Cost-Leakage-Analysis
-## Project Overview
-This project analyzes delivery operations data to identify SLA breaches, delay patterns, and potential cost leakage impacting business performance.Using 25,000+ delivery records, the objective was to:
-- Measure SLA compliance performance
-- Identify operational delay drivers
-- Quantify cost impact of delivery breaches
-- Provide data-driven recommendations to reduce penalties and improve efficiency
-This project simulates a real-world logistics analytics use case similar to Amazon, Flipkart, Delhivery, or 3PL operations.
+## SLA Breach Risk & Operational Optimization
 ## Business Problem
-- Late deliveries affect:
-- Customer satisfaction and retention
-- Contractual SLA penalties
-- Operational cost efficiency
-- Brand reliability
-## The business needed answers to:
-- What % of deliveries are breaching SLA?
-- Which regions and vehicle modes cause maximum delays?
-- How do weather and operational factors impact delivery time?
-- What is the estimated financial impact of SLA breaches?
-## Dataset Details
-[Dataset](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/Delivery_Logistics.csv)
-- Fields include:
-- Delivery ID
-- Region
-- Vehicle Mode
-- Delivery Time (Hours)
-- Weather Conditions
-- Customer Rating
-Dataset is simulated but modeled to reflect real logistics operations.
-## Methodology
-### Data Cleaning & Validation (SQL + Excel)
-- Removed inconsistencies
-- Checked missing values
-- Standardized time calculations
-### SLA Classification Logic (SQL)
-Deliveries were categorized into:
-- 0–1 hour delay → Operational Delay
-- 1–3 hours delay → SLA Risk
-- 3+ hours delay → SLA Breach
-## KPI Creation (Power BI - DAX)
-Created measures for:
-- SLA Breach Count
-- SLA Breach %
-- Average Delay Hours
-- Total Estimated Cost Leakage
-- Region-wise Risk Score
-## Key Insights
-- 5,805 deliveries identified as SLA breaches
-- Certain vehicle modes showed significantly higher average delay
-- Weather conditions contributed heavily to SLA risk
-- Low customer ratings strongly correlated with higher delay hours
-- Identified high-risk regions contributing to majority of cost leakage
-- Cost Leakage Estimation
-- Estimated financial impact of SLA breaches using assumed penalty cost per breach.
-- This helped simulate how delays translate into real revenue impact and operational inefficiency.
-## Dashboard Structure
-### [Dashboard](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/delivery_logistic.pbit)
-## Business Recommendations
-- Reallocate vehicle resources in high-risk regions
-- Introduce weather-based route planning adjustments
-- Monitor SLA risk category proactively (1–3 hour window)
-- Implement performance-based tracking for delivery partners
-## Skills Demonstrated
-- SQL Query Writing & Conditional Logic
-- DAX Calculations
-- KPI Design
-- Business Problem Framing
-- Operational Analytics
-- Data Visualization
-- Cost Impact Analysis
+Logistics operations often face hidden financial losses due to delayed deliveries and SLA breaches. Without a centralized analytical view, operations teams struggle to identify high-risk routes, vendors, and regions contributing to penalty costs and service inefficiencies.
+
+This project aims to quantify SLA breach patterns and estimate cost leakage to enable data-driven operational decisions.
+## Objective
+- Measure SLA breach rate across regions, vehicle types, and weather conditions
+- Quantify financial cost leakage due to delivery delays
+- Identify key operational drivers of delays
+- Provide actionable recommendations to reduce penalty exposure
+## Dataset Overview
+- Total Records: 25000 shipments
+- Columns:Region, Vehicle Type, Weather, Transportation Cost,Delivery_partner, etc.
+## Key KPIs Defined
+- SLA Breach % = Total Breached Shipments / Total Shipments
+- Total Cost Leakage (k) = SUM(Penalty Cost for Breached Deliveries)
+- Average Delay Duration = AVG(Delay Days)
+- High-Risk Region Contribution % = Region Breaches / Total Breaches
+## Analytical Approach
+- Data Cleaning & Validation (SQL / Excel)
+- Feature Engineering for delay and risk indicators
+- Exploratory Data Analysis
+- Segment-wise Breach Analysis (Region, Weather, Vehicle Type)
+- Financial Impact Estimation
+- Interactive Dashboard Development (Power BI)
+## Key Findings
+- Overall SLA Breach Rate: 23.22%
+- Total Estimated Cost Leakage: 408.2k
+- Region north contributed 22.95% of total breaches
+- Heavy Rain conditions increased breach likelihood by 34%
+- Dhl had  higher penalty cost
+- This indicates operational inefficiencies are concentrated in specific high-risk segments.
+## Business Impact
+- Based on current breach patterns:
+- Annual Penalty Exposure: ₹ XX lakh
+- Reducing breach rate by 5% could save approx ₹ X lakh annually
+- Reallocating high-risk routes could reduce delay severity by X%
+- This analysis enables proactive SLA risk management and cost optimization.
+## Recommendations
+- Prioritize operational monitoring in high-breach regions
+- Introduce weather-based buffer adjustments during monsoon periods
+- Reallocate high-risk routes to more reliable vehicle types
+- Implement early delay detection alerts for shipments exceeding risk threshold
+## Dashboard Preview
+[Dashboard]()
+The dashboard includes:
+- Executive KPI Summary
+- Region-wise SLA Performance
+- Delay Distribution Analysis
+- Cost Leakage Breakdown
+
+Risk Segmentation View
