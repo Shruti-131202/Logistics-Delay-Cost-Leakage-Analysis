@@ -12,6 +12,11 @@ This project aims to quantify SLA breach patterns and estimate cost leakage to e
 ## Dataset Overview
 - Total Records: 25000 shipments
 - Columns:Region, Vehicle Type, Weather, Transportation Cost,Delivery_partner, etc.
+## Assumptions & Financial Logic
+- SLA breach determined based on committed delivery window.
+- Penalty estimated as a percentage of transportation cost for breached shipments.
+- Total penalty exposure annualized based on shipment volume.
+- Maximum observed delay: 3+ hours, indicating tight SLA thresholds rather than severe operational breakdown.
 ## Key KPIs Defined
 - SLA Breach % = Total Breached Shipments / Total Shipments
 - Total Cost Leakage (k) = SUM(Penalty Cost for Breached Deliveries)
@@ -25,23 +30,21 @@ This project aims to quantify SLA breach patterns and estimate cost leakage to e
 - Financial Impact Estimation
 - Interactive Dashboard Development (Power BI)
 ## Key Findings
-- Overall SLA Breach Rate: 23.22% across 25,000 shipments
-- Deliveries during Foggy weather show 34% breach rate, 1.46x higher than network average
-- Clear weather performs significantly better at 14.37%, indicating strong environmental impact on SLA risk
-- Total Estimated Annual Penalty Exposure: ₹408,200
-- Region North accounts for 22.95% of total breaches, proportional to its shipment share (~20%), indicating no abnormal regional concentration
-- Same-Day delivery shows extremely high SLA breach rate (50%) but represents only 0.8% of total shipments, limiting overall financial impact.
-- SLA risk is more strongly influenced by weather and delivery mode variability than by regional distribution
+- 23.22% of shipments breach SLA, indicating operational instability across the network.
+- Weather is the primary risk driver: Fog conditions increase breach probability to 34% (1.46x network average), while Clear weather performs significantly better at 14.37%.
+- Same-Day delivery has structurally high breach risk (50%), suggesting overcommitment in aggressive SLA promises — though financial exposure is limited due to low shipment share (0.8%).
+- Regional distribution does not materially influence SLA risk; breach share aligns with shipment volume.
+- Identified ₹408.2K in preventable annual penalty exposure, primarily driven by weather-sensitive routes and delivery mode variability.
 ## Business Impact
 - Based on current breach patterns:
 - Annual Penalty Exposure: 408 k
 - If Company can reduce breach rate by 30% could save approx 122k  annually.
 - This analysis enables proactive SLA risk management and cost optimization.
 ## Recommendations
-- Prioritize operational monitoring in high-breach regions
-- Introduce weather-based buffer adjustments during monsoon periods
-- Reallocate high-risk routes to more reliable vehicle types
-- Implement early delay detection alerts for shipments exceeding risk threshold
+- Recalibrate SLA commitments during high-risk weather conditions to reduce weather-driven breach spikes.
+- Reassess Same-Day delivery promises in zones with structurally high breach probability.
+- Implement early delay alerts for shipments nearing SLA thresholds to enable proactive intervention.
+- Continuously monitor breach variance across vehicle types during weather volatility.
 ## Dashboard Preview
 [Dashboard](https://github.com/Shruti-131202/Logistics-Delay-Cost-Leakage-Analysis/blob/main/delivery_logistic.pbit)
 - ![SLA Performance](https://github.com/user-attachments/assets/86aaa389-ca2a-4f32-b3be-92c188ffc0df)
